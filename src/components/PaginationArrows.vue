@@ -1,21 +1,21 @@
 <template>
   <div
-    class="previous-page__click-button"
-    :class="{'first-page': isFirstPage}"
-    @click="emits('clickPrevPage')"
+    class="next-page__click-button"
+    :class="{'last-page': isLastPage}"
+    @click="emits('clickNextPage')"
   >
-    <span class="arrow arrow-right"></span>
+    <span class="arrow arrow-left"></span>
   </div>
   <slot
     v-if="slots.buttonsPagination"
     name="buttonsPagination"
   />
   <div
-    class="next-page__click-button"
-    :class="{'last-page': isLastPage}"
-    @click="emits('clickNextPage')"
+    class="previous-page__click-button"
+    :class="{'first-page': isFirstPage}"
+    @click="emits('clickPrevPage')"
   >
-    <span class="arrow arrow-left"></span>
+    <span class="arrow arrow-right"></span>
   </div>
 </template>
 
