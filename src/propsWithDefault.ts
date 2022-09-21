@@ -88,11 +88,11 @@ export default {
   },
   rowsItems: {
     type: Array as PropType<number[]>,
-    default: () => [25, 50, 100],
+    default: () => [10, 20, 50, 100],
   },
   rowsPerPageMessage: {
     type: String,
-    default: 'rows per page:',
+    default: 'عدد الصفوف بكل صفحة:',
   },
   searchField: {
     type: String,
