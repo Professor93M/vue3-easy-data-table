@@ -211,9 +211,10 @@
           :rows-items="rowsItemsComputed"
         />
       </div>
-      <div class="pagination__items-index">
+      <div dir='rtl' class="pagination__items-index">
+        {{ totalItemsLength }}
+        من 
         {{ `${currentPageFirstIndex}–${currentPageLastIndex}` }}
-        of {{ totalItemsLength }}
       </div>
       <slot
         v-if="ifHasPaginationSlot"
